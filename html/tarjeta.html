@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&family=Sriracha&display=swap" rel="stylesheet">
+	<title>Generador de tarjetas</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!---Nav--->
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html"><img src="../img/logo.jpeg"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+           <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="e1.html">EJERCICIO1</a>
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e2.html" tabindex="-1" aria-disabled="true">EJERCICIO2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e3.html" tabindex="-1" aria-disabled="true">EJERCICIO3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e4.html" tabindex="-1" aria-disabled="true">EJERCICIO4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e5.html" tabindex="-1" aria-disabled="true">EJERCICIO5</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tarjeta.html" tabindex="-1" aria-disabled="true">TARJETA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CONTADOROPCION.html" tabindex="-1" aria-disabled="true">CONTADOROPCION</a>
+      </li>
+    </ul>
+  </div>
+</nav>  
+</section>
+</head>
+<body >
+	<center><h1>GENERADOR DE TARJETA</h1></center>
+	<form name="tarjeta" id="opciones" action="#" method="post" style="margin-left: 200px" > 
+		<h2>TEMAS:</h2>
+		<br><br>
+	<label style="margin-left: 100px;" >
+<input type="radio" name="tipoT" id="sv" value="unoo"> SAN VALENTIN</label>
+<label style="margin-left: 200px;" >
+<input type="radio" name="tipoT" id="fc" value="doss"> FFELIZ CUMPLEAÑOS</label>
+<label style="margin-left: 300px;" >
+<input type="radio" name="tipoT" id="mot" value="tress">MOTIVACION</label>
+
+</form>
+<br><br>
+
+<form name=imagen style="margin-left: 200px" > 
+		<h2>IMAGENES:</h2>
+		<br><br>
+		<img src="../img/v2.jpg" width="30%" height="30%" id="imagen1">
+		<img src="../img/b2.jpg" width="30%" height="30%" id="imagen2" style="margin-left: 30px;">
+		<img src="../img/m2.jpg" width="30%" height="30%" id="imagen3" style="margin-left: 30px;"><br><br>
+		<label style="margin-left: 100px;"   >
+<input type="Radio" name="imagenes" value="imagen1"   id="imageN1">SAN VALENTIN</label>
+<label style="margin-left: 200px;">
+<input type="Radio" name="imagenes" value="imagen2"  id="imageN2"> FELIZ CUMPLEAÑOS</label>
+<label style="margin-left: 300px;">
+<input type="Radio" name="imagenes" value="imagen3"  id="imageN3">MOTIVACION
+</label>
+
+
+</form>
+<br><br>
+<form name=texto style="margin-left: 300px" > 
+		<h1>TITULO</h1>
+		
+		<textarea placeholder="Capture el cuerpo del mensaje." name="Area" id="ariatxt" rows="11" cols="50" style="float: right;margin-right: 300px;"></textarea>
+
+
+<input type="text" name="Titulo"  placeholder="TITULO" id="tittle"> <br><br><br><br>
+
+<input type="text" name="Subtitulo"  placeholder="SUBTITULO" id="subtittle"> <br> <br><br><br>
+
+<input type="text" name="Nombre" placeholder="NOMBRE DE LA PERSONA" id="pernom">
+
+
+</form>
+
+<br><br>
+<form name=texto style="margin-left: 300px" > 
+		<h1>COLOR</h1>
+		<input type="color" name="color" id="bg" style="margin-left: 50px;">
+		<button type="button" onclick="Generador();" style="float: right;margin-right: 400px;height: 50px;width: 200px;margin-bottom: 100px;">Generar</button>
+
+
+</form>
+<script type="text/javascript">
+	function Generador(){
+		//AQUÍ TOMAMOS LOS VALORES QUE FUERON PROPORCIONADO POR EL USUARIO Y LOS GUARDAMOS EN VARIABLES.
+		var Titu,Stitu,Aria,Prn,Cam,Autor,Fecha;
+		
+		Titu=document.getElementById("tittle").value;
+		Stitu=document.getElementById("subtittle").value;
+		Aria=document.getElementById("ariatxt").value;
+		Prn=document.getElementById("pernom").value;
+		Cam=document.getElementById("bg").value;
+		Autor=prompt("Ingresa tu nombre")
+		Fecha=new Date();
+
+			
+		//SAN VALENTIN
+		if(document.getElementById("sv").checked == true){
+			
+			if(document.getElementById("imageN1").checked == true){
+				
+				document.write('<article style="font-family: Dancing Script, cursive; color: red; text-align: center;">'+'<audio src="media/Love_Now.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/v2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		
+		document.body.style.backgroundColor=Cam;
+		
+}
+	else if(document.getElementById("imageN2").checked == true){
+
+		document.write('<article style="font-family: Dancing Script, cursive; color: red; text-align: center;">'+'<audio src="media/Love_Now.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/b2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+else if(document.getElementById("imageN3").checked == true){
+
+		document.write('<article style="font-family: Dancing Script, cursive; color: red; text-align: center;">'+'<audio src="media/Love_Now.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/m2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+
+	}
+	//CUMPLEAÑOS
+	else if(document.getElementById("fc").checked == true){
+			if(document.getElementById("imageN1").checked == true){
+
+		document.write('<article style="font-family: Indie Flower, cursive; color: blue; text-align: center;">'+'<audio src="media/Happy_Birthday_Old_Timey.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/v2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+	else if(document.getElementById("imageN2").checked == true){
+
+		document.write('<article style="font-family: Indie Flower, cursive; color: blue; text-align: center;">'+'<audio src="media/Happy_Birthday_Old_Timey.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/b2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+else if(document.getElementById("imageN3").checked == true){
+
+		document.write('<article style="font-family: Indie Flower, cursive; color: blue; text-align: center;">'+'<audio src="media/Happy_Birthday_Old_Timey.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/m2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+
+	}
+//MOTIVACIONAL
+	else if(document.getElementById("mot").checked == true){
+			if(document.getElementById("imageN1").checked == true){
+
+		document.write('<article style="font-family: font-family: Sriracha, cursive; color: green; text-align: center;">'+'<audio src="media/Peace_Creek.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/v2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+	else if(document.getElementById("imageN2").checked == true){
+
+		document.write('<article style="font-family: font-family: Sriracha, cursive; color: green; text-align: center;">'+'<audio src="media/Peace_Creek.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/b2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+else if(document.getElementById("imageN3").checked == true){
+
+		document.write('<article style="font-family: font-family: Sriracha, cursive; color: green; text-align: center;">'+'<audio src="media/Peace_Creek.mp3" autoplay="" loop>'+'</audio>'+'<h1 style="font-size: 50px; text-align: center;">'+Titu+'</h1>'+'<h2 style="font-size: 40px; text-align: center;">'+Stitu+'</h2>'+'<br>'+'<img src="../img/m2.jpg" width="70%" height="60%">'+'<br>'+'<p style="text-align: center;">'+Aria+'</p>'+'<br>'+'<br>'+"Nos vemos, "+Prn+"."+'<br>'+'<h3 style="float: right;">'+Autor+'</h3>'+'<h3 style="float:left;">'+Fecha+'</h3>'+'</article>');
+		document.body.style.backgroundColor=Cam;
+}
+
+	}
+
+
+			
+	}
+</script>
+        <!----------Footer---------->
+      <section id="footer">
+        <div class="container text-center">
+          <p> Natalie Anahi Gama Herrera</p>
+          <p>19.gama.natalie.1d@gmail.com</p>
+          <p>28 de Junio del 2020</p>
+        </div>
+      </section>
+             <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--------Footer End------>
+      <script src="../js/smooth-scroll.js"></script>
+      <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
+
+</style>
+<footer>
+</footer>
+</body>
+</html>

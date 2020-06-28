@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>Java Ejercicios</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!---Nav--->
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="index.html"><img src="../img/logo.jpeg"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+           <a class="nav-link" href="index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="e1.html">EJERCICIO1</a>
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e2.html" tabindex="-1" aria-disabled="true">EJERCICIO2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e3.html" tabindex="-1" aria-disabled="true">EJERCICIO3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e4.html" tabindex="-1" aria-disabled="true">EJERCICIO4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="e5.html" tabindex="-1" aria-disabled="true">EJERCICIO5</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="tarjeta.html" tabindex="-1" aria-disabled="true">TARJETA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="CONTADOROPCION.html" tabindex="-1" aria-disabled="true">CONTADOROPCION</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+			
+		</nav>
+
+	</section>
+
+  <section>
+    <form action="#" method="post" name="formu">
+      <label>Elige de que parte de la ciudad es</label>
+
+      <select name="parte">
+        <option value="Norte">Norte</option>
+        <option value="Sur">Sur</option>
+        <option value="Centro">Centro</option>
+      </select>
+      <input type="button" onclick="votar();" value="votar"/> 
+    </form>
+
+    <article id="mensaje"></article>
+  </section>
+
+  <script type="text/javascript">
+    function votar()
+    {
+      if(document.formu.parte.value=="Norte")
+      {
+        document.getElementById("mensaje").innerHTML="Ha elegido la parte Norte."
+      }
+      else
+      {
+        if(document.formu.parte.value=="Sur")
+      {
+        document.getElementById("mensaje").innerHTML="Ha elegido la parte Sur."
+      }
+      else
+      {
+        document.getElementById("mensaje").innerHTML="Ha elegido la parte Centro."
+      }
+      }
+    }
+  </script>
+
+<!----------Footer---------->
+      <section id="footer">
+        <div class="container text-center">
+          <p> Natalie Anahi Gama Herrera</p>
+          <p>19.gama.natalie.1d@gmail.com</p>
+          <p>14 de Junio del 2020</p>
+        </div>
+      </section>
+             <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--------Footer End------>
+      <script src="../js/smooth-scroll.js"></script>
+      <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
+</body>
+</html>
